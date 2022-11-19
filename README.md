@@ -58,6 +58,7 @@ export default {
 ## Usage
 * Example 1
 ```
+<script>
 import { numberCounter } from "vue3-number-counter";
 
 export default {
@@ -75,7 +76,7 @@ export default {
     }
   }
 }
-
+</script>
 
 <template>
       <div v-number-counter="counter">0% completed</div>
@@ -104,6 +105,7 @@ const counter = {
 * Example 3
 
 ```
+<script setup>
 const counter = {
   countFrom: 0,
   countTo: 100,
