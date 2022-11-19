@@ -11,20 +11,4 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  build: {
-    lib: {
-      entry: "./src/number-counter.ts",
-      formats: [ "es", "cjs" ],
-      name: "number-counter",
-      fileName: (format) => (format === "es" ? "index.js" : "index.cjs"),
-    },
-    rollupOptions: {
-      external: [ "vue" ],
-      output: {
-        globals: {
-          vue: "Vue",
-        },
-      },
-    },
-  }
 })
