@@ -1,5 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+
+//@ts-ignore
 import numberCounter from "vue3-number-counter";
 
 const app = createApp(App);
